@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сияй с нами</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('картинки/10416565.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav a.active {
+            background: #555;
+            border-radius: 5px;
+        }
+        .container {
+            flex: 1;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            color: #333;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .active {
+            opacity: 1;
+        }
+        h2 {
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Сияй с нами</h1>
+            <nav>
+                <a id="about-link" onclick="showSection('about')">О нас</a>
+                <a id="services-link" onclick="showSection('services')">Услуги</a>
+                <a id="staff-link" onclick="showSection('staff')">Сотрудники</a>
+                <a id="contact-link" onclick="showSection('contact')">Контакты</a>
+                <a id="reviews-link" onclick="showSection('reviews')">Отзывы</a>
+            </nav>
+        </header>
+<div class="container">
+            <section id="about" class="section active">
+                <h2>О нас</h2>
+                <p>Салон красоты-Парикмахерская"Сияй с нами" — это идеальное место, где красота и забота о себе соединяются в гармонии. Мы знаем, как важно для каждого чувствовать себя уверенно и привлекательно. Наш салон предлагает широкий спектр услуг, включая маникюр, педикюр, укладку и окрашивание волос.
+
+Команда наших высококвалифицированных мастеров — это не просто профессионалы, а настоящие художники, создающие уникальные образы. Каждое посещение — это не только уход за собой, но и возможность расслабиться в уютной атмосфере нашего салона, наполненном теплом и дружелюбием.
+
+Мы используем только качественные и безопасные продукты, чтобы гарантировать нашим клиентам результат, который будет радовать вас долгое время. Мы стремимся не только к высокому уровню обслуживания, но и к тому, чтобы каждый клиент чувствовал себя частью нашей дружной семьи.
+
+Приходите в "Сияй с нами" и откройте для себя мир красоты и гармонии. Позвольте нам помочь вам сиять! Мы предлагаем широкий спектр услуг от классических стрижек до модных окрашиваний, с использованием только лучших инструментов и материалов. Наши опытные мастера знают секреты создания идеального образа, который подчеркнет вашу уникальность и красоту. С каждым клиентом мы создаем индивидуальный подход, чтобы вы почувствовали себя особенными. Погрузитесь в атмосферу уюта и профессионализма, оставляя заботы позади и выходя с улыбкой. Откройте для себя в "Сияй с нами" новые грани вашего стиля!</p>
+            </section>
+            <section id="services" class="section">
+                <h2>Наши услуги</h2>
+                <ul>
+                    <li>Женская стрижка — от 700 рублей</li>
+                            <li>Мужская стрижка — от 500 рублей</li>
+                            <li>Детская стрижка — от 400 рублей</li>
+                            <li>Укладка волос — от 600 рублей</li>
+                        </ul>
+                    </li>
+                    <li>Окрашивание:
+                        <ul>
+                            <li>Однотонное окрашивание — от 1500 рублей</li>
+                            <li>Мелирование — от 1800 рублей</li>
+                            <li>Омбре и сомбре — от 2000 рублей</li>
+                            <li>Тонирование — от 1300 рублей</li>
+                        </ul>
+                    </li>
+                    <li>Уход и лечение:
+                        <ul>
+                            <li>Глубокое кондиционирование — от 800 рублей</li>
+                            <li>Кератиновое выпрямление — от 3000 рублей</li>
+                            <li>Восстанавливающие процедуры — от 1200 рублей</li>
+                        </ul>
+                    </li>
+                    <li>Специальные услуги:
+                        <ul>
+                            <li>Праздничные прически — от 1000 рублей</li>
+                            <li>Плетение кос — от 900 рублей</li>
+                            <li>Барбер услуги — от 600 рублей</li>
+                        </ul>
+                    </li>
+                    <li>Услуги по маникюру:
+                        <ul>
+                            <li>маникюр — от 1000 рублей</li>
+                            <li>наращивание — от 1500 рублей</li>
+                            <li>дизайн — от 600 рублей</li>
+                            <li>педикюр — от 1500 рублей</li>
+                </ul>
+            </section>
+            
+
+            <section id="staff" class="section">
+                <h2>Сотрудники</h2>
+                <p>Наши мастера — это профессионалы с многолетним опытом и страстью к своему делу. Убедитесь в их мастерстве и доброжелательности, которые помогут вам создать идеальный образ.</p>
+                <ul>
+                             <div style="text-align: center;">
+                <img src="картинки/мастер1.jpg" alt="Любовь Иванова" style="width:200px; height:auto;">
+                <p>Любовь Иванова — старший мастер-маникюра</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="картинки/мастер2.jpg" alt="Марина Петрова" style="width:200px; height:auto;">
+                <p>Марина Петрова — эксперт по окрашиванию</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="картинки/мастер3.jpg" alt="Елена Смирнова" style="width:200px; height:auto;">
+                <p>Елена Смирнова — специалист по уходу за волосами</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="картинки/мастер4.jpg" alt="Дмитрий Федоров" style="width:200px; height:auto;">
+                <p>Дина Фёдорова — Администратор</p>
+            </div>
+                </ul>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>Контакты</h2>
+                <ul>
+                    <li>Главный офис: +7 (123) 456-78-90</li>
+                    <li>Администратор: +7 (123) 456-78-91</li>
+                    <li>Запись на услуги: +7 (123) 456-78-92</li>
+                    <li>Отдел кадров: +7 (123) 456-78-93</li>
+                </ul>
+                <p>Адрес: ул. Горького, 13, г. Нижний Новгород</p>
+            </section>
+             <section id="reviews" class="section">
+    <h2>Отзывы</h2>
+    <p>Мы ценим мнение наших клиентов! Вот некоторые отзывы:</p>
+    <ul>
+        <li>
+            <img src="картинки/отзыв1.jpg" style="width:300px; height:180px; border-radius:15%;">
+        </li>
+        <li>
+            <img src="картинки/отзыв2.jpg"  style="width:300px; height:180px; border-radius:15%;">
+        </li>
+        <li>
+            <img src="картинки/отзыв3.jpg" style="width:300px; height:150px; border-radius:15%;">
+        </li>
+        <li>
+            <img src="картинки/отзыв4.jpg" style="width:300px; height: 150px; border-radius:15%;">
+        </li>
+    </ul>
+</section>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Сияй с нами</p>
+        </footer>
+        <section id="reviews" class="section">
+    </div>
+<script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+                section.style.opacity = '0';
+            });
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+            activeSection.style.opacity = '1';
+
+const links = document.querySelectorAll('nav a');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+            document.getElementById(sectionId + '-link').classList.add('active');
+        }
+    </script>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+                section.style.opacity = '0';
+            });
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+            activeSection.style.opacity = '1';
+    
+            // Прокрутка к активному разделу
+            activeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+            document.getElementById(sectionId + '-link').classList.add('active');
+        }
+    </script>
+</body>
+</html>
